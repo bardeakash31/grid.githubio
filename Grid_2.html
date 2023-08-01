@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+
+            display: grid;
+            grid-template-columns: 320px 320px 320px;
+            grid-template-rows: 110px 110px 110px 110px;
+            color: rgb(255, 255, 255);
+            /* grid-auto-columns: 120x; */
+            grid-auto-rows: 110px;
+
+        }
+
+        .box1 {
+            background-color: rgb(5, 125, 63);
+            grid-column: 1/span 2;
+        }
+
+        .box2 {
+            background-color: rgb(46, 116, 208);
+        }
+
+        .box3 {
+            background-color: rgb(228, 30, 238);
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .box4 {
+            background-color: rgb(1, 2, 22);
+            grid-column: 2/span 2;
+        }
+
+        .box5 {
+            background-color: rgb(223, 241, 19);
+        }
+
+        .box6 {
+            background-color: rgb(243, 89, 6);
+            grid-row-start: 1;
+            grid-column-start: 4;
+            grid-row-end: 6;
+        }
+
+        .box7 {
+            background-color: rgb(239, 14, 14);
+            grid-column: 1/span 3;
+        }
+
+        .box8 {
+            background-color: rgb(58, 54, 54);
+            grid-row-start: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .box9 {
+            background-color: rgb(4, 203, 24);
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .box10 {
+            background-color: rgb(1, 47, 23);
+            grid-row-start: 5;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .box11 {
+            background-color: rgb(216, 122, 6);
+             grid-row-start: 5;
+            grid-column-start: 3;
+            grid-column-end: 4; 
+            /* grid-row: 2/-1; */
+        }
+
+        .box12 {
+            background-color: rgba(0, 251, 25, 0.642);
+            grid-column: 1/span 4;
+        }
+
+        span {
+            left: 45%;
+            position: relative;
+            top: 45%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1"><span>1</span></div>
+        <div class="box2"><span>2</span></div>
+        <div class="box3"><span>3</span></div>
+        <div class="box4"><span>4</span></div>
+        <div class="box5"><span>5</span></div>
+        <div class="box6"><span>6</span></div>
+        <div class="box7"><span>7</span></div>
+        <div class="box8"><span>8</span></div>
+        <div class="box9"><span>9</span></div>
+        <div class="box10"><span>10</span></div>
+        <div class="box11"><span>11</span></div>
+        <div class="box12"><span>12</span></div>
+    </div>
+</body>
+
+</html>
